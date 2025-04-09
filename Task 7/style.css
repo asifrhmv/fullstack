@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0px
+}
+ol{
+    width:30%;
+    list-style-position: inside;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+   
+}
+li{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    padding: 10px 35px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: white;
+    transition:all.3s
+
+}
+
+li:nth-of-type(1){
+    background-color: black;
+}
+
+li:nth-of-type(2){
+    background-color:silver
+}
+
+li:nth-of-type(3){
+    background-color:#808080
+}
+
+li:nth-of-type(4){
+    background-color:#3498db
+}
+
+li:nth-of-type(5){
+    background-color: #800000
+}
+
+li:nth-of-type(6){
+    background-color:#FF0000
+}
+
+li:nth-of-type(7){
+    background-color: #800080
+}
+
+li:nth-of-type(8){
+    background-color: #FF00FF;
+}
+
+li:nth-of-type(9){
+    background-color: #008000;
+}
+
+li:nth-of-type(10){
+    background-color: #00FF00;
+}
+
+li:nth-of-type(11){
+    background-color:#808000 ;
+}
+
+li:nth-of-type(12){
+    background-color:#FFFF00 ;
+}
+
+li:nth-of-type(13){
+    background-color:#000080 ;
+}
+
+li:nth-of-type(14){
+    background-color:#0000FF
+    ;
+}
+
+li:nth-of-type(15){
+    background-color: #008080;
+}
+
+li:nth-of-type(16){
+    background-color:#00FFFF ;
+}
+
+
+
+
+
+
+
+
+li:hover{
+   background-color: white;
+   color: black;
+   cursor: pointer;
+}
