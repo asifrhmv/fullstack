@@ -1,0 +1,71 @@
+.esas{
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chip{
+    width: 50px;
+    padding-top: 35px;
+    margin-left: -5px;
+}
+.alt{
+    display: flex;
+    justify-content: space-between;
+margin-top: -50px;}
+
+#visa{
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.kart{width: 315px;
+    height: 200px;
+    min-width: 300px;
+    background-color: #8e44ad;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    border-radius: 10px;
+    padding-left: 15px;}
+
+    .val{
+        font-family: 'Tahoma', sans-serif;
+        font-size: 9px;
+        margin-bottom: 0;
+        margin-top: 28px;
+    }
+
+    .date{
+        margin: 0;
+    }
+
+    .cardname{font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 15px;
+        font-family: monospace;
+    margin-top: -20px;}
+    
+
+        .cardnumber{font-weight: 200;
+            font-size: 25px;
+            margin-top: -5px;}
+
+
+            .kart:nth-child(2){
+                background-color: black;
+            }
+            .kart:nth-child(3){
+                background-color: green;
+            }
+            .kart:nth-child(4){
+                background-color: blue;
+            }
+
+.date{
+    font-family: 'Tahoma', sans-serif;
+}
