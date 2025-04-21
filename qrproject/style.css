@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #d5e1ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #fff;
+    width: 300px;
+    padding: 16px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+h2{
+    padding: 20px;
+    font-size: 18px;
+    margin-inline: auto;
+    
+}
+p{
+    
+    text-align: center;
+}
