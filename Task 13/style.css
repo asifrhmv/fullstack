@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    max-width: 1320px;
+    width: 70%;
+    font-family: "Oswald", sans-serif;
+    margin-inline: auto;
+}
+
+h1{font-family:"Oswald", sans-serif; ;
+
+}
+
+header{
+    text-align: center;
+}
+
+p{
+    font-family: "Roboto",sans-serif;
+    color: #777777;
+    font-size: 14px;
+}
+
+article{
+    width: calc(100%/3);
+    text-align: center;
+    line-height: 24px;
+    transition: all 1s;
+    padding: 45px 55px;
+    margin-right: 30px;
+
+}
+main{margin-top: 100px;
+display: flex;
+}
+
+article:hover{
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
