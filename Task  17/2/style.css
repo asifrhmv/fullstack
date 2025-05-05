@@ -7,6 +7,157 @@ box-sizing: border-box;
 
 body{
    background-color: #1a9ac9;
-   font-family: : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
-   
+   font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+   max-width: 1140px;
+   width: 80%;
+    margin: 0 auto;
 }
+
+.head h1{
+    text-align: center;
+    color: #fff;
+    font-size: 56px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head{
+    margin-top: 100px;
+}
+
+.box{
+    width: 780px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   border: 1px solid #fff;
+}
+
+.box>*{
+    transition: all 1s ease-out;
+    
+}
+
+
+.picture2{
+    animation: pc1 1s 1s ease-out forwards;
+    &:hover{
+        transform: scale(1.1);
+        
+    }
+
+}
+
+.picture8{
+    animation: pc2 1s 1s ease-out forwards;
+    
+}
+
+.picture6{
+    animation: pc3 1s 1s ease-out forwards;
+}
+
+.picture7{
+    animation: pc3 1s 1s ease-out forwards;
+}
+
+.picture1{
+    animation: pc4 1.5s 1s ease-out forwards;
+  
+}
+.picture1:hover{
+    transform: scale(1.2);
+    
+}
+
+.picture3{
+    animation: pc5 1s 1s ease-out forwards;
+}
+
+.picture4{
+    animation: pc5 1s 1s ease-out forwards;
+}
+
+.picture9{
+    animation: pc1 1s 1s ease-out forwards;
+}   
+
+.picture5{
+    animation: pc6 1.5s 1s ease-out forwards;
+}   
+
+
+@keyframes pc1{
+
+  0%{
+    transform: translateX(0);
+  }  
+  100%{
+    transform: translateX(-260px);
+  }
+}
+
+@keyframes pc2{
+
+  0%{
+    transform: translateX(0);
+  }  
+  100%{
+    transform: translateY(-302.26px);
+  }
+}
+
+@keyframes pc3{
+
+  0%{
+    transform: translateX(0);
+  }  
+  100%{
+    transform: translateY(-151.13px);
+  }
+}
+
+@keyframes pc4{
+
+  0%{
+    transform: translateX(0) translateY(0); 
+  }
+   75%{
+    transform: translateY(0) translateX(260px);
+   }
+   
+  100%{
+    transform: translateY(151.13px) translateX(260px);
+  }
+}
+
+@keyframes pc5{
+
+  0%{
+    transform: translateX(0) translateY(0); 
+  }
+  100%{
+    transform: translateY(151.13px) translateX(0);
+  }
+}
+
+@keyframes pc6{
+
+  0%{
+    transform: translateX(0) translateY(0); 
+  }
+  75%{
+    transform: translateY(151.13px) translateX(0);
+   }
+  100%{
+    transform: translateY(151.13px) translateX(260px);
+  }
+}
+
