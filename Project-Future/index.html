@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Future</title>
+  <title>Futuristik Sayt - Yüklənmə Animasiya</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <style>
     /* Perspective konteyneri */
     .cube-container {
@@ -108,9 +111,12 @@
   <!-- Hero -->
   <header class="h-screen flex items-center justify-center bg-fixed bg-center bg-cover relative" style="background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg');">
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative z-10 text-center px-4">
-      <h1 class="text-5xl font-bold text-white mb-4">Xoş Gəldiniz</h1>
-      <p class="text-xl text-gray-300">Sizin gələcəyin texnologiyası ilə tanış olun</p>
+    <div class="relative z-10 text-center px-4 max-w-3xl" data-aos="fade-up">
+      <h1 class="text-6xl font-extrabold text-yellow-400 mb-6 drop-shadow-lg">Xoş Gəldiniz</h1>
+      <p class="text-2xl text-gray-300 leading-relaxed">Sizin gələcəyin texnologiyası ilə tanış olun</p>
+      <button class="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition shadow-lg">
+        Başlayın
+      </button>
     </div>
   </header>
 
@@ -171,6 +177,342 @@
       </div>
     </div>
   </section>
+   <!-- Header -->
+   <header class="bg-gray-900 text-white py-10 px-6 text-center">
+    <h1 class="text-5xl font-bold text-yellow-400">Biz Kimik?</h1>
+    <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+      Biz, texnologiyanın gücünə inanan, kreativ və enerjili bir komandayıq. Məqsədimiz istifadəçilərə dəyərli, funksional və innovativ rəqəmsal həllər təqdim etməkdir.
+    </p>
+  </header>
+
+  <!-- Komandamız -->
+  <section class="bg-gray-950 text-white py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4 text-yellow-400">Komandamız</h2>
+      <p class="text-gray-300 text-lg">Peşəkar və yaradıcı komandamızla tanış olun</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <!-- Üzv 1 -->
+      <div class="bg-gray-800 rounded-2xl p-6 text-center border border-gray-700 hover:border-yellow-400 shadow-lg hover:shadow-yellow-400/40 transition duration-500">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Üzv 1" class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 shadow-lg" />
+        <h3 class="text-xl font-semibold text-yellow-400">Orxan Məmmədov</h3>
+        <p class="text-gray-400">Frontend Developer</p>
+        <p class="mt-3 text-sm text-gray-500">İstifadəçi təcrübəsini ön planda tutaraq müasir UI-lər yaradır.</p>
+      </div>
+
+      <!-- Üzv 2 -->
+      <div class="bg-gray-800 rounded-2xl p-6 text-center border border-gray-700 hover:border-yellow-400 shadow-lg hover:shadow-yellow-400/40 transition duration-500">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Üzv 2" class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 shadow-lg" />
+        <h3 class="text-xl font-semibold text-yellow-400">Aysel Quliyeva</h3>
+        <p class="text-gray-400">UI/UX Dizayner</p>
+        <p class="mt-3 text-sm text-gray-500">Estetik və funksional interfeyslərlə layihələri canlandırır.</p>
+      </div>
+
+      <!-- Üzv 3 -->
+      <div class="bg-gray-800 rounded-2xl p-6 text-center border border-gray-700 hover:border-yellow-400 shadow-lg hover:shadow-yellow-400/40 transition duration-500">
+        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Üzv 3" class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 shadow-lg" />
+        <h3 class="text-xl font-semibold text-yellow-400">Elvin Rzayev</h3>
+        <p class="text-gray-400">Backend Developer</p>
+        <p class="mt-3 text-sm text-gray-500">Güclü və təhlükəsiz sistem memarlığı ilə məlumat axınını idarə edir.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-950 text-white py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center mb-16" data-aos="fade-down">
+      <h2 class="text-4xl font-bold mb-4 text-yellow-400">Proyektlərimiz</h2>
+      <p class="text-gray-300 text-lg">Gördüyümüz işlərlə tanış olun</p>
+    </div>
+  
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Project 1 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-yellow-400 transition-transform hover:-translate-y-2 hover:shadow-yellow-400/40 shadow-xl"
+           data-aos="fade-up">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">AI Bot Sistemi</h3>
+        <p class="text-gray-400">Müştəri xidmətlərini avtomatlaşdırmaq üçün hazırlanmış ağıllı chatbot.</p>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-yellow-400 transition-transform hover:-translate-y-2 hover:shadow-yellow-400/40 shadow-xl"
+           data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">E-Ticarət Platforması</h3>
+        <p class="text-gray-400">Tam funksional və cavab verən onlayn alış-veriş saytı.</p>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-yellow-400 transition-transform hover:-translate-y-2 hover:shadow-yellow-400/40 shadow-xl"
+           data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Portfolio Saytı</h3>
+        <p class="text-gray-400">Dizaynerlər və proqramçılar üçün şəxsi portfolio saytları.</p>
+      </div>
+  
+      <!-- Project 4 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-yellow-400 transition-transform hover:-translate-y-2 hover:shadow-yellow-400/40 shadow-xl"
+           data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Mobil App UI</h3>
+        <p class="text-gray-400">Futuristik və istifadəçi dostu mobil tətbiq interfeysləri.</p>
+      </div>
+  
+      <!-- Project 5 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-yellow-400 transition-transform hover:-translate-y-2 hover:shadow-yellow-400/40 shadow-xl"
+           data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Admin Panel</h3>
+        <p class="text-gray-400">Verilənləri izləmək və idarə etmək üçün dinamik idarəetmə panelləri.</p>
+      </div>
+  
+      <!-- Project 6 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-yellow-400 transition-transform hover:-translate-y-2 hover:shadow-yellow-400/40 shadow-xl"
+           data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">SEO Optimallaşdırma</h3>
+        <p class="text-gray-400">Veb saytların axtarış sistemləri üçün optimallaşdırılması xidmətləri.</p>
+      </div>
+    </div>
+  </section>
+  <section class="relative py-24 bg-gradient-to-br from-purple-900 via-black to-gray-900 text-white overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-30 blur-3xl">
+      <div class="w-96 h-96 bg-purple-500 rounded-full absolute top-1/3 left-1/4 mix-blend-screen animate-pulse"></div>
+      <div class="w-96 h-96 bg-yellow-500 rounded-full absolute bottom-1/3 right-1/4 mix-blend-screen animate-pulse"></div>
+    </div>
+  
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in">
+      <div class="bg-white/5 backdrop-blur-md rounded-3xl shadow-2xl p-10 border border-white/10">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-yellow-400">Sənin üçün də yarada bilərik!</h2>
+        <p class="text-lg text-gray-300 mb-8">Xəyallarındakı layihəni reallaşdırmaq üçün bir klik kifayətdir. Komandamızla gələcəyin texnologiyasını yarat!</p>
+        <a href="#contact" class="inline-block px-8 py-3 text-lg font-semibold text-black bg-yellow-400 rounded-xl shadow-lg hover:bg-yellow-500 hover:scale-105 transition duration-300">
+          Əlaqə Saxla
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Blog Section -->
+<section class="bg-gray-900 text-white py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-bold mb-4 text-yellow-400">Bloq Yazılarımız</h2>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+      Son texnologiyalar və layihələrimiz barədə maraqlı məqalələrlə tanış olun.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!-- Blog Post 1 -->
+    <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-400/40 transition-shadow duration-500">
+      <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Texnologiya trendləri" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-3 text-yellow-400 hover:text-yellow-500 transition">2025-ci ilin Texnologiya Trendləri</h3>
+        <p class="text-gray-400 mb-4">Yeni il üçün texnologiya sahəsində gözlənilən yeniliklər və inkişaflar barədə qısa icmal.</p>
+        <a href="#" class="text-yellow-400 hover:text-yellow-500 font-semibold inline-flex items-center">
+          Daha çox oxu
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Blog Post 2 -->
+    <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-400/40 transition-shadow duration-500">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Frontend İnkişaf" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-3 text-yellow-400 hover:text-yellow-500 transition">Frontend İnkişafda Yeniliklər</h3>
+        <p class="text-gray-400 mb-4">İstifadəçi interfeyslərində yeni texnologiyalar və dizayn tendensiyaları.</p>
+        <a href="#" class="text-yellow-400 hover:text-yellow-500 font-semibold inline-flex items-center">
+          Daha çox oxu
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Blog Post 3 -->
+    <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-400/40 transition-shadow duration-500">
+      <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="DevOps və İnfrastruktur" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-3 text-yellow-400 hover:text-yellow-500 transition">DevOps Praktikalarında Ən Yaxşı Təcrübələr</h3>
+        <p class="text-gray-400 mb-4">Layihələrin davamlılığı və avtomatlaşdırma üçün DevOps metodologiyaları.</p>
+        <a href="#" class="text-yellow-400 hover:text-yellow-500 font-semibold inline-flex items-center">
+          Daha çox oxu
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+<section id="contact" class="bg-gray-900 text-white py-20 px-6" data-aos="fade-left">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    
+    <!-- Kontakt məlumatları -->
+    <div class="space-y-8">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">Bizimlə əlaqə</h2>
+      <p class="text-gray-400 max-w-md">
+        Suallarınız və ya təklifləriniz üçün bizimlə əlaqə saxlayın. Ən qısa zamanda geri dönəcəyik.
+      </p>
+      
+      <div class="space-y-4 text-gray-300">
+        <div class="flex items-center space-x-4">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 10h18M3 6h18M3 14h12M3 18h18"></path>
+          </svg>
+          <span>123 Bakı, Azərbaycan, Nizami küçəsi 45</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.45 12.45 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.26-1.26a2 2 0 0 1 2.11-.45 12.45 12.45 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <a href="tel:+994501234567" class="hover:text-yellow-400 transition">+994 50 123 45 67</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:info@example.com" class="hover:text-yellow-400 transition">info@example.com</a>
+        </div>
+      </div>
+
+      <div class="flex space-x-6 mt-8">
+        <a href="#" aria-label="Facebook" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14.86A5.48 5.48 0 0 0 22.4.4a11 11 0 0 1-3.5 1.34A5.48 5.48 0 0 0 16.5 0a5.5 5.5 0 0 0-5.4 6.8A15.63 15.63 0 0 1 2 1.9a5.47 5.47 0 0 0 1.7 7.3A5.41 5.41 0 0 1 1 8.9v.07a5.5 5.5 0 0 0 4.4 5.4 5.52 5.52 0 0 1-2.5.1 5.5 5.5 0 0 0 5.1 3.8A11 11 0 0 1 1 20.4a15.6 15.6 0 0 0 8.4 2.5c10 0 15.5-8.3 15.5-15.5 0-.3 0-.5 0-.8A11 11 0 0 0 23 3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-3a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C3.33 3.5 2 4.84 2 6.48c0 1.64 1.33 2.97 2.98 2.97s2.98-1.33 2.98-2.97c0-1.64-1.33-2.98-2.98-2.98zM2 21h6v-12H2v12zm7-12h5.5v1.63h.08c.77-1.47 2.67-3.02 5.48-3.02 5.86 0 6.95 3.85 6.95 8.85V21h-6v-7.72c0-1.84-.03-4.2-2.57-4.2-2.57 0-2.96 2-2.96 4.06V21h-6v-12z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Əlaqə formu -->
+    <form class="bg-gray-800 rounded-3xl p-10 shadow-lg" action="#" method="POST">
+      <div class="space-y-6">
+        <div>
+          <label for="name" class="block mb-2 font-semibold text-yellow-400">Adınız</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Adınızı daxil edin"
+            class="w-full rounded-2xl border border-gray-700 bg-gray-900 px-5 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+          />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold text-yellow-400">E-poçt</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="E-poçtunuzu daxil edin"
+            class="w-full rounded-2xl border border-gray-700 bg-gray-900 px-5 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+          />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold text-yellow-400">Mesajınız</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Mesajınızı yazın..."
+            class="w-full rounded-2xl border border-gray-700 bg-gray-900 px-5 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none transition"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-yellow-400 text-gray-900 font-semibold px-12 py-3 rounded-full hover:bg-yellow-500 shadow-lg transition duration-300"
+          >
+            Göndər
+          </button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+<footer class="bg-gray-900 text-white py-16 px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+    <!-- Haqqımızda -->
+    <div>
+      <h3 class="text-yellow-400 text-xl font-semibold mb-6">Haqqımızda</h3>
+      <p class="text-gray-400 leading-relaxed">
+        Biz ən yüksək keyfiyyətlə xidmət göstərərək müştərilərimizin məmnuniyyətini təmin etməyə çalışırıq. Yenilikçi yanaşmalar və etibarlı dəstək bizim əsas prinsiplərimizdir.
+      </p>
+    </div>
+
+    <!-- Tez-tez soruşulanlar -->
+    <div>
+      <h3 class="text-yellow-400 text-xl font-semibold mb-6">Tez-tez soruşulanlar</h3>
+      <ul class="space-y-4 text-gray-400">
+        <li><a href="#" class="hover:text-yellow-400 transition">Xidmətlərimiz nələrdir?</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Qiymət siyasəti</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Əlaqə məlumatları</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">İş saatlarımız</a></li>
+      </ul>
+    </div>
+
+    <!-- Əlaqə -->
+    <div>
+      <h3 class="text-yellow-400 text-xl font-semibold mb-6">Əlaqə</h3>
+      <ul class="space-y-4 text-gray-400">
+        <li class="flex items-center space-x-3">
+          <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 10h18M3 6h18M3 14h12M3 18h18"></path>
+          </svg>
+          <span>123 Bakı, Nizami küçəsi 45</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.45 12.45 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.26-1.26a2 2 0 0 1 2.11-.45 12.45 12.45 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <a href="tel:+994501234567" class="hover:text-yellow-400 transition">+994 50 123 45 67</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:info@example.com" class="hover:text-yellow-400 transition">info@example.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sosial Media -->
+    <div>
+      <h3 class="text-yellow-400 text-xl font-semibold mb-6">Sosial Media</h3>
+      <div class="flex space-x-6">
+        <a href="#" aria-label="Facebook" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14.86A5.48 5.48 0 0 0 22.4.4a11 11 0 0 1-3.5 1.34A5.48 5.48 0 0 0 16.5 0a5.5 5.5 0 0 0-5.4 6.8A15.63 15.63 0 0 1 2 1.9a5.47 5.47 0 0 0 1.7 7.3A5.41 5.41 0 0 1 1 8.9v.07a5.5 5.5 0 0 0 4.4 5.4 5.52 5.52 0 0 1-2.5.1 5.5 5.5 0 0 0 5.1 3.8A11 11 0 0 1 1 20.4a15.6 15.6 0 0 0 8.4 2.5c10 0 15.5-8.3 15.5-15.5 0-.3 0-.5 0-.8A11 11 0 0 0 23 3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-3a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="text-yellow-400 hover:text-yellow-300 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C3.33 3.5 2 4.84 2 6.48c0 1.64 1.33 2.97 2.98 2.97s2.98-1.33 2.98-2.97c0-1.64-1.33-2.98-2.98-2.98zM2 21h6v-12H2v12zm7-12h5.5v1.63h.08c.77-1.47 2.67-3.02 5.48-3.02 5.86 0 6.95 3.85 6.95 8.85V21h-6v-7.72c0-1.84-.03-4.2-2.57-4.2-2.57 0-2.96 2-2.96 4.06V21h-6v-12z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm select-none">
+    © 2025 Sənin Şirkətin. Bütün hüquqlar qorunur.
+  </div>
+</footer>
+
+
+
 
   <script>
     // Navbar scrolled class əlavə edir
@@ -192,6 +534,15 @@
       }, 1000);
     });
   </script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animasiyanın davam etmə müddəti (ms)
+    once: true // bir dəfə oynatsın
+  });
+</script>
+
 
 </body>
 </html>
