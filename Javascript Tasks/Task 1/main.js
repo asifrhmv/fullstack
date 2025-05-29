@@ -134,6 +134,150 @@
 
 
 
-// task 25
+// task 26
 
 
+// let il=number(prompt("Bir il daxil edin:"));
+// if(il%4==0){
+//     alert(`Daxil etdiyiniz il uzun ildir !`)
+// }
+// else{
+//     alert(`Daxil etdiyiniz il uzun il deyil !`)
+// }
+
+//task27
+
+
+// let id = Number(prompt(`Enter product id:`))
+// switch (id) {
+
+//     case 1:
+//         alert(`Available 10 pcs.`)
+//         break
+
+//     case 2:
+//         alert(`Available 256 pcs.`)
+//         break
+
+//     case 3:
+//         alert(`Available 53 pcs.`)
+//         break
+
+//     case 4:
+//         alert(`There are 3 available.`)
+//         break
+
+//         default:
+//             alert(`Out of stock`)
+
+// }
+
+
+// task 34
+
+// let eded=Number(prompt(`Eded daxilmedin:`));
+// if(eded>0){
+//     alert(`Eded musbetdir !`)
+// }
+// else if(eded<0){
+//     alert(`Eded menfidir !`)
+// }
+// else if(eded==0){
+//     alert(`Eded 0-dir !`)
+// }
+
+
+
+//task 35
+
+// let a = 5, b = 8, c = 3;
+
+// if(a>b && a>c){
+//     alert(`En boyuk eded ${a}-dir !`)
+// }
+// else if(b>a && b>c){
+//     alert(`En boyuk eded ${b}-dir !`)
+// }
+// else if(c>a && c>b){
+//     alert(`En boyuk eded ${c}-dir !`)
+// }
+
+
+
+// task 36
+
+
+// let eded=Number(prompt(`Ededi daxil edin !`))
+// let result=eded%2==0?(`Cut eded`):(`Tek eded`)
+// alert(result)
+
+
+//task 37
+
+// let teref=Number(prompt(`Kvadratin bir terefini daxil edin`))
+// let sahe=teref*teref
+// let perimetr=teref*4
+
+// alert(`Kvadratin terefi:${teref}
+//     Kvadratin sahesi:${sahe}
+//     Kvadratin perimetri:${perimetr}`)
+
+
+
+//task 38
+
+// let eded=Number(prompt(`Balinizi daxil edin:`))
+// switch(true){
+
+// case (eded>0 && eded<60):
+//     alert(`Zeif`)
+//     break
+// case (eded>=60 && eded<75):
+//     alert(`Orta`)
+//     break
+// case (eded>=75 && eded<90):
+//     alert(`Yaxshi`)
+//     break
+// case (eded>=90 && eded<=100):
+//     alert(`Ela`)
+//     break
+//     default:
+//         alert(`Zehmet olmasa balinizi duzgun daxil edin !`)
+
+// }
+
+
+// task 39
+
+// let eded=Math.floor(Math.random()*100)
+
+// if(eded>0 && eded<=50){
+//     alert(`Eded : ${eded}
+//         Eded 0-50 araligindadir !`)
+// }
+
+
+//task 40
+
+// let a = 5, b = 3
+// operator = prompt(`Operatoru daxil edin(+;-;/;*)`)
+// switch (operator) {
+//     case "/":
+//         alert(`a=5;b=3
+//             Netice :${a / b}`)
+//         break
+//     case "*":
+//         alert(`a=5;b=3
+//                 Netice: ${a * b}`)
+//         break
+//     case "+":
+//         alert(`a=5;b=3
+//                     Netice: ${a + b}`)
+//         break
+//     case "-":
+//         alert(`a=5;b=3
+//                         Netice: ${a - b}`)
+//         break
+//     default:
+//         alert(`Operatoru duzgun daxil edin`)
+// }
