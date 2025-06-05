@@ -144,11 +144,27 @@
 
 
 
-function CapitalizeWords(metn){
-let sozler= metn.split(" ")
-let i=0;
-while(i < sozler.length){
-let soz=sozler[i];
-sozler=soz.char
-}
-}
+
+//9
+
+
+// function isEven(a){
+//     if(a%2==0){
+// return true
+//     }
+//         else{
+//             return false
+//         }
+// }
+
+
+
+//10
+
+
+
+// let number= "+7123456789"
+// if (number.length==11 & number.startsWith(+7)){
+//     return true
+// }
+
